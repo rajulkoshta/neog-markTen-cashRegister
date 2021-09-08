@@ -13,19 +13,52 @@
         <div class="nav-brand">IamBrandname</div>
     </nav>
     <header class="hero">
-        <img class="hero-img" src="images/headerhero.svg" alt="">
+        <!-- <img class="hero-img" src="images/headerhero.svg" alt=""> -->
         <h1 class="hero-heading">Adarsh Balika a <span class="heading-inverted">Web Developer</span></h1>
     </header>
 
     <section class="section">
         <div class="container container-center">
+            <div>
             <label for="billAmount">Bill Amount</label>
-            <input type="number" id="billAmount" name="billAmount" min="10" max="1000000">
-            
-            <label for="billAmount">Cash Given</label>
-            <input type="number" id="billAmount" name="billAmount" min="10" max="1000000">
-            
+            <input type="number" id="billAmount" name="billAmount" min="10" max="1000000" required>
+            </div>
+            <div>
+            <label for="cashAmount">Cash Given</label>
+            <input type="number" id="cashAmount" name="cashAmount" min="10" max="1000000" required>
+            </div>
+
             <button class="btn-primary">Check</button>
+
+            <div>Return Cash</div>
+            <table>
+                <tr>
+                  <td>no of notes</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  
+                </tr>
+                <tr>
+                  <td>notes</td>
+                  <td>2000</td>
+                  <td>500</td>
+                  <td>200</td>
+                  <td>100</td>
+                  <td>50</td>
+                  <td>20</td>
+                  <td>10</td>
+                  <td>5</td>
+                  <td>1</td>
+                  
+                </tr>
+              </table>
         </div>
     </section>
 </body>

@@ -11,26 +11,33 @@ reloadBtn.addEventListener("click", refresh);
 checkBtn.addEventListener("click", validatingBillAndCashAmt);
 
 function validatingBillAndCashAmt() {
-hideMessage();
+    hideMessage();
+    var bill = billInput.value;
+    var cash = cashInput.value;
 
-    if (billInput.value > 0) {
-        if (cashInput.value >= billInput.value) {
-            var amountToBeReturned = cashInput.value - billInput.value;
-            calculateChange(amountToBeReturned);
+    if (bill > 0) {
+        if (bill === cash) {
+            showMessage("no amount to be returned");
         } else {
-            showMessage("Do you wanna wash plates!");
+            if (cash > bill) {
+                var amountToBeReturned = cash - bill;
+                calculateChange(amountToBeReturned);
+            } else {
+                showMessage("Do you wanna wash plates!");
+            }
         }
     } else {
         showMessage("invalid bill Amount");
     }
 }
-function calculateChange(amountToBeReturned){
-        for(var i=0;i<=notes.length;i++){
-           const numberOfNotes = Math.trunc(amountToBeReturned/notes[i]);
-           amountToBeReturned %= notes[i];
-           noOfNotes[i].innerText=numberOfNotes;
 
-        }
+function calculateChange(amountToBeReturned) {
+    for (var i = 0; i <= notes.length; i++) {
+        const numberOfNotes = Math.trunc(amountToBeReturned / notes[i]);
+        amountToBeReturned %= notes[i];
+        noOfNotes[i].innerText = numberOfNotes;
+
+    }
 }
 
 function hideMessage() {
@@ -39,9 +46,10 @@ function hideMessage() {
 
 function showMessage(msg) {
     message.style.display = "block";
-    message.innerText =msg;
+    message.innerText = msg;
 
 }
-function refresh(){
+
+function refresh() {
     window.location.reload("Refresh");
-  }
+}

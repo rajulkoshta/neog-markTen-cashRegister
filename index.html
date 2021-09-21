@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cash Register Manager</title>
-    <link rel="icon" type="image/png" href="icon/icon.png"/>
+    <link rel="icon" type="image/png" href="icon/icon.png" />
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,20 +16,22 @@
     </nav>
     <header class="hero container container-center">
         <!-- <img class="hero-img" src="images/headerhero.svg" alt=""> -->
-        <h1 class="hero-heading"> Calculate Cash to return to your customer with <span class="heading-inverted">Cash Register Manager</span></h1>
+        <h1 class="hero-heading"> Calculate Cash to return to your customer with <span class="heading-inverted">Cash
+                Register Manager</span></h1>
     </header>
 
     <section class="section">
         <div class="container container-center">
-            <div>
-            <label for="billAmount">Bill Amount</label>
-            <input type="number" class="input" id="billAmount" name="billAmount" min="10" max="1000000" required>
-            </div>
-            <div>
-            <label for="cashAmount">Cash Given</label>
-            <input type="number" class="input" id="cashAmount" name="cashAmount" min="10" max="1000000" required>
-            </div>
-
+            <form>
+                <div>
+                    <label for="billAmount">Bill Amount</label>
+                    <input type="number" class="input" id="billAmount" name="billAmount" min="1" max="1000000" required>
+                </div>
+                <div>
+                    <label for="cashAmount">Cash Given</label>
+                    <input type="number" class="input" id="cashAmount" name="cashAmount" min="1" max="1000000" required>
+                </div>
+            </form>
             <button class="btn btn-primary">Check</button>
             <button class="btn btn-secondary">reload</button>
 
@@ -37,7 +39,7 @@
             <table class="changeTable">
                 <caption>Return Cash</caption>
                 <tr>
-                  <th>no of notes</th>
+                    <th>no of notes</th>
                     <td class="no-of-notes"></td>
                     <td class="no-of-notes"></td>
                     <td class="no-of-notes"></td>
@@ -47,17 +49,17 @@
                     <td class="no-of-notes"></td>
                 </tr>
                 <tr>
-                  <th>notes</th>
-                  <td>2000</td>
-                  <td>500</td>
-                  <td>100</td>
-                  <td>20</td>
-                  <td>10</td>
-                  <td>5</td>
-                  <td>1</td>
-                  
+                    <th>notes</th>
+                    <td>2000</td>
+                    <td>500</td>
+                    <td>100</td>
+                    <td>20</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>1</td>
+
                 </tr>
-              </table>
+            </table>
         </div>
     </section>
     <footer class="footer">

@@ -21,6 +21,7 @@ function validatingBillAndCashAmt() {
         } else {
             if (cash > bill) {
                 var amountToBeReturned = cash - bill;
+                showMessage("change to be returned : " + amountToBeReturned);
                 calculateChange(amountToBeReturned);
             } else {
                 showMessage("Do you wanna wash plates!");

@@ -99,7 +99,7 @@ font-size: 1rem;
     color: white;
   }
 /* table */
-table, th, td {
+th, td {
     border: 2px solid var(--primary-color);
   }
 .changeTable{
@@ -129,7 +129,10 @@ caption{
     text-decoration: none;
     padding: 0.5rem 1rem;
 }
-
+.footer img{
+    height:40px;
+    width: 40px;
+}
 .footer ul{
     padding-inline-start: 0px;
 }
